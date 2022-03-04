@@ -9,4 +9,7 @@ fs.writeFileSync("./txt/output.txt", textOut);
 console.log("File written");
 
 // Non-blocking/Asyncronous Way
-fs.readFile("", () => {});
+fs.readFile("./txt/start.txt", (err, data) => {
+  console.log("err:", err);
+  console.log("data:", data);
+});
